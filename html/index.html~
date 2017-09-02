@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--ID: 1245491, Name: Lepeka Kavenga -->
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+    	<title>New Zealand Tourist Information</title>
+        <meta name="NZ Tourist Info" content="COMP333">
+        <link rel="stylesheet" href="../CSS/stylesheet.css">
+        <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUdh30179aILXKj4Vb8cCkSZtG5EOp5_k"></script>
+		  <script type="text/javascript" src="../Javascript/map.js"></script>
+	</head>
+
+	<body onload="initMap()">
+		<div id="main">
+			<div id="header">
+			<h1></h1>
+			</div>
+			<!--<div id="links">
+				<p id="search">Searched:</p>
+				<div id="townLinks"></div>		
+			</div>-->
+    		<form id="town" action="JavaScript: geocode()">
+    			<fieldset>
+				<legend>Which town would you like to explore?</legend>
+				<input type="text" name="townName" id="townName">
+            <input type="submit" id="submit" value="Submit">
+         	</fieldset>
+			</form>
+			<p id="message"></p> 
+
+			<div id="map"></div>
+			<br>
+			<form id="place" action="JavaScript: getPlace()">
+				<fieldset>
+					<legend>Select place of interest:</legend>
+					<input type="text" name="placeType" id="placeType">
+         	   <input type="submit" id="submitPlace" value="Search">
+         	</fieldset>
+         </form>
+         <div id="message2"></div>  	
+		</div>
+	</body>
+
+</html>
